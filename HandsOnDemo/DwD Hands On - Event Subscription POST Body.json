@@ -1,0 +1,15 @@
+{
+	"eventTypeId": "fieldOperation",
+	"filters": [{
+			"key": "orgId",
+			"values": ["390740"]
+		}
+	],
+	"targetEndpoint": {
+		"targetType": "https",
+		"uri": "https://qx64inu6oi.execute-api.us-east-1.amazonaws.com/dwdDSSExample/dssEvent"
+	},
+	"displayName": "",
+	"token": "{your lambda name}",
+	"email": "SomeSupportTeam@Example.com"
+}

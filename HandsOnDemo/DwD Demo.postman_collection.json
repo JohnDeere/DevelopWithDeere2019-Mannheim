@@ -9527,6 +9527,104 @@
 			"protocolProfileBehavior": {}
 		},
 		{
+			"name": "Machine Breadcrumbs",
+			"item": [
+				{
+					"name": "Get Machine Breadcrumbs",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "tokenSecret",
+									"value": "{{OAUTH1_CLIENT_TOKEN_SECRET}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{OAUTH1_CLIENT_ACCESS_TOKEN}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{OAUTH_CLIENT_SECRET}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "{{OAUTH_CLIENT_ID}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "nonce",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "autoAddParam",
+									"type": "any"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.deere.axiom.v3+json"
+							}
+						],
+						"url": {
+							"raw": "https://partnerapi.deere.com/platform/machines/{{MACHINE_ID}}/breadcrumbs",
+							"protocol": "https",
+							"host": [
+								"partnerapi",
+								"deere",
+								"com"
+							],
+							"path": [
+								"platform",
+								"machines",
+								"{{MACHINE_ID}}",
+								"breadcrumbs"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
 			"name": "Machine Monitoring  (BETA)",
 			"item": [
 				{

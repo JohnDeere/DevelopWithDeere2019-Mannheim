@@ -1242,7 +1242,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "[{\r\n    \"@type\": \"ContributedAssetLocation\",\r\n    \"timestamp\": \"2019-11-24T05:00:00.000Z\",\r\n    \"geometry\": \"{\\\"type\\\": \\\"Feature\\\",\\\"geometry\\\": {\\\"geometries\\\": [{\\\"coordinates\\\": [8.4755, 49.4728],\\\"type\\\": \\\"Point\\\"}],\\\"type\\\": \\\"GeometryCollection\\\"}}\",\r\n    \"measurementData\": [{\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Temperature](https://developer.deere.com)\",\r\n                    \"value\": \"32.6\",\r\n                    \"unit\": \"C\"\r\n    }, {\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Fuel Level](https://developer.deere.com)\",\r\n                    \"value\": \"36\",\r\n                    \"unit\": \"%\"\r\n    }, {\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Engine Speed](https://developer.deere.com)\",\r\n                    \"value\": \"4203\",\r\n                    \"unit\": \"RPM\"\r\n    }, {\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Humidity](https://developer.deere.com)\",\r\n                    \"value\": \"22.2\",\r\n                    \"unit\": \"%\" \r\n    }, {\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Wind Speed](https://developer.deere.com)\",\r\n                    \"value\": \"11.3\",\r\n                    \"unit\": \"MPH\"\r\n    }, {\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Rain Fall](https://developer.deere.com)\",\r\n                    \"value\": \"1.5\",\r\n                    \"unit\": \"Inches\"\r\n    }, {\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Model](https://developer.deere.com)\",\r\n                    \"value\": \"300ACZ\",\r\n                    \"unit\": \"Premium\" \r\n    }, {\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Software Version](https://developer.deere.com)\",\r\n                    \"value\": \"3.0.2\",\r\n                    \"unit\": \"Beta\"                     \r\n    }]\r\n}]"
+							"raw": "[{\r\n    \"@type\": \"ContributedAssetLocation\",\r\n    \"timestamp\": \"2019-12-04T05:00:00.000Z\",\r\n    \"geometry\": \"{\\\"type\\\": \\\"Feature\\\",\\\"geometry\\\": {\\\"geometries\\\": [{\\\"coordinates\\\": [8.4755, 49.4728],\\\"type\\\": \\\"Point\\\"}],\\\"type\\\": \\\"GeometryCollection\\\"}}\",\r\n    \"measurementData\": [{\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Temperature](https://developer.deere.com)\",\r\n                    \"value\": \"32.6\",\r\n                    \"unit\": \"C\"\r\n    }, {\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Fuel Level](https://developer.deere.com)\",\r\n                    \"value\": \"36\",\r\n                    \"unit\": \"%\"\r\n    }, {\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Engine Speed](https://developer.deere.com)\",\r\n                    \"value\": \"4203\",\r\n                    \"unit\": \"RPM\"\r\n    }, {\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Humidity](https://developer.deere.com)\",\r\n                    \"value\": \"22.2\",\r\n                    \"unit\": \"%\" \r\n    }, {\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Wind Speed](https://developer.deere.com)\",\r\n                    \"value\": \"11.3\",\r\n                    \"unit\": \"MPH\"\r\n    }, {\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Rain Fall](https://developer.deere.com)\",\r\n                    \"value\": \"1.5\",\r\n                    \"unit\": \"Inches\"\r\n    }, {\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Model](https://developer.deere.com)\",\r\n                    \"value\": \"300ACZ\",\r\n                    \"unit\": \"Premium\" \r\n    }, {\r\n                    \"@type\": \"BasicMeasurement\",\r\n                    \"name\": \"[Software Version](https://developer.deere.com)\",\r\n                    \"value\": \"3.0.2\",\r\n                    \"unit\": \"Beta\"                     \r\n    }]\r\n}]"
 						},
 						"url": {
 							"raw": "https://partnerapi.deere.com/platform/assets/{{ASSET_ID}}/locations",
@@ -9522,6 +9522,104 @@
 					],
 					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Machine Breadcrumbs",
+			"item": [
+				{
+					"name": "Get Machine Breadcrumbs",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "tokenSecret",
+									"value": "{{OAUTH1_CLIENT_TOKEN_SECRET}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{OAUTH1_CLIENT_ACCESS_TOKEN}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{OAUTH_CLIENT_SECRET}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "{{OAUTH_CLIENT_ID}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "nonce",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "autoAddParam",
+									"type": "any"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.deere.axiom.v3+json"
+							}
+						],
+						"url": {
+							"raw": "https://partnerapi.deere.com/platform/machines/{{MACHINE_ID}}/breadcrumbs",
+							"protocol": "https",
+							"host": [
+								"partnerapi",
+								"deere",
+								"com"
+							],
+							"path": [
+								"platform",
+								"machines",
+								"{{MACHINE_ID}}",
+								"breadcrumbs"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}

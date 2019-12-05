@@ -25,7 +25,7 @@ EMAIL_USER = 'git from the usual place'
 EMAIL_PW = 'git from the usual place'
 
 # OAuth Constants
-CLIENT_KEY = ''
-CLIENT_SECRET = ''
-OAUTH_TOKEN = ''
-OAUTH_TOKEN_SECRET = ''
+CLIENT_KEY = 'johndeere-7d5qS7Wfxhq1emRPPHCQag85'
+CLIENT_SECRET = 'e77bbc3799027d5e3cfe20dcefd3170cac9f0ecf'
+OAUTH_TOKEN = '9ccc429d-6442-43e5-ae58-279e1a5de8bf'
+OAUTH_TOKEN_SECRET = 'ZqtJ0bupYJGTUBIGtpr6YJJjZPQsv4KHYf+6CI2DSFlh9ltmuO3IETHpfnxfT/5e7L6jUVNSLGi0iawlLv1kOUXzlOhdikKUWY9+w+VE2RU='
